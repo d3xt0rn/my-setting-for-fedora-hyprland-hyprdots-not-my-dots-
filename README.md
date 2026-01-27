@@ -8,7 +8,7 @@ Personal Hyprland configuration based on **fedora-hyprland-hyprdots**, modified 
 
 ## 📸 Screenshot
 
-![Desktop](screenshots/desktop.png)
+![Desktop](https://github.com/user-attachments/assets/7f622d5e-3c80-49ab-b8b1-97c3c8710432)
 
 > Screenshot from my current Hyprland setup
 
