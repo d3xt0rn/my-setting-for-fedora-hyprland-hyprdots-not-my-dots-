@@ -1,2 +1,197 @@
-# my-setting-for-fedora-hyprland-hyprdots-not-my-dots-
-THAT SETTING FOR NOT MY HYPRLAND DOTS
+# Fedora Hyprland – My Settings (Not My Dots)
+
+Personal Hyprland configuration based on **fedora-hyprland-hyprdots**, modified and adapted for my workflow.
+
+> ⚠️ This is NOT a plug-and-play distro. You are expected to tweak configs for your system.
+
+---
+
+## 📸 Screenshot
+
+![Desktop](screenshots/desktop.png)
+
+> Screenshot from my current Hyprland setup
+
+---
+
+## ✨ About
+
+This repository contains **my personal configuration** for:
+
+* Hyprland
+* Waybar
+* Fastfetch
+
+The base configuration was taken from:
+[https://github.com/Senshi111/fedora-hyprland-hyprdots](https://github.com/Senshi111/fedora-hyprland-hyprdots)
+
+Then modified, cleaned and adjusted for my needs.
+
+---
+
+## 🧩 Components
+
+| Component | Description |
+| --------- | ----------- |
+| WM        | Hyprland    |
+| Bar       | Waybar      |
+| Fetch     | Fastfetch   |
+| Shell     | zsh         |
+| Display   | Wayland     |
+| OS        | Fedora      |
+
+---
+
+## ⌨️ Keybindings (Main)
+
+**Main modifier:** `SUPER`
+
+### 🪟 Windows / Session
+
+```
+SUPER + Q              → Close focused window
+ALT   + F4             → Close focused window
+SUPER + Delete         → Exit Hyprland session
+SUPER + W              → Toggle floating mode
+ALT   + Enter          → Toggle fullscreen
+SUPER + L              → Lock screen
+SUPER + Backspace      → Logout menu
+CTRL  + ALT + W        → Restart Waybar
+SUPER + SPACE          → Switch keyboard layout
+```
+
+### 🚀 Applications
+
+```
+SUPER + T              → Terminal (kitty)
+SUPER + E              → File manager (nautilus)
+SUPER + C              → Code editor (VS Code)
+SUPER + F              → Browser (Firefox)
+SUPER + A              → App launcher (rofi)
+SUPER + TAB            → Window switcher
+```
+
+### 🧭 Workspaces
+
+```
+SUPER + 1..9           → Switch workspace
+SUPER + SHIFT + 1..9   → Move window to workspace
+SUPER + CTRL + ←/→     → Previous / Next workspace
+SUPER + Mouse Wheel    → Scroll workspaces
+```
+
+### 🔊 Media / System
+
+```
+XF86AudioRaiseVolume   → Volume up
+XF86AudioLowerVolume   → Volume down
+XF86AudioMute          → Toggle mute
+XF86AudioPlay          → Play / Pause
+XF86MonBrightnessUp    → Brightness up
+XF86MonBrightnessDown  → Brightness down
+```
+
+---
+
+## 🔐 SSH Shortcut (Optional)
+
+There is an **optional SSH keybind** included in the config.
+
+Example:
+
+```
+bind = SUPER+CTRL, S, exec, kitty -e ssh user@host
+```
+
+### ⚠️ Disabled by default
+
+If you want to enable it:
+
+1. Open:
+
+```
+~/.config/hypr/keybindings.conf
+```
+
+2. Edit the SSH line:
+
+   * change `user@host`
+   * or remove it if you don’t need SSH shortcuts
+
+This is **optional** and safe to remove.
+
+---
+
+## 📥 Installation
+
+> Make sure you already have **Hyprland installed**.
+
+### 🔹 Clone repository
+
+```
+git clone https://github.com/d3xt0rn/my-setting-for-fedora-hyprland-hyprdots-not-my-dots-
+cd my-setting-for-fedora-hyprland-hyprdots-not-my-dots-
+```
+
+### 🔹 Backup existing configs (recommended)
+
+```
+mkdir -p ~/.config-backup
+cp -r ~/.config/fastfetch ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/waybar   ~/.config-backup/ 2>/dev/null
+cp -r ~/.config/hypr     ~/.config-backup/ 2>/dev/null
+```
+
+### 🔹 Install Fastfetch
+
+```
+mkdir -p ~/.config/fastfetch
+cp -r fastfetch/* ~/.config/fastfetch/
+```
+
+### 🔹 Install Waybar
+
+```
+mkdir -p ~/.config/waybar
+cp -r waybar/* ~/.config/waybar/
+```
+
+### 🔹 Install Hyprland
+
+```
+mkdir -p ~/.config/hypr
+cp -r hyprland/* ~/.config/hypr/
+```
+
+### 🔹 Reload Hyprland
+
+```
+hyprctl reload
+```
+
+Or simply **log out and log back in**.
+
+---
+
+## 🧠 Notes
+
+* Tested on **Fedora**
+* Wayland only
+* Fonts, icons and wallpapers are **not included**
+* NVIDIA users may require additional flags
+
+---
+
+## 🧾 License
+
+MIT
+
+---
+
+## 🤝 Credits
+
+Original project:
+
+* **Senshi111** – fedora-hyprland-hyprdots
+
+Configs modified and maintained by **d3xt0rn**
