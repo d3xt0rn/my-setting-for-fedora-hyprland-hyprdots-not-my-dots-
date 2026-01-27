@@ -124,7 +124,7 @@ This is **optional** and safe to remove.
 
 ## 📥 Installation
 
-> Make sure you already have **Hyprland installed**.
+> Make sure you already have **[DOTS](https://github.com/Senshi111/fedora-hyprland-hyprdots)** installed.
 
 ### 🔹 Clone repository
 
