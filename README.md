@@ -194,4 +194,4 @@ Original project:
 
 * **Senshi111** – fedora-hyprland-hyprdots
 
-Configs modified and maintained by **d3xt0rn**
+Configs modified and maintained by **/home/dubina (me)**
