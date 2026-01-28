@@ -152,7 +152,7 @@ cp -r fastfetch/* ~/.config/fastfetch/
 ### 🔹 Install Cava
 
 ```
-mkdir -p ~/.config/fastfetch
+mkdir -p ~/.config/cava
 cp -r cava/* ~/.config/cava/
 ```
 
