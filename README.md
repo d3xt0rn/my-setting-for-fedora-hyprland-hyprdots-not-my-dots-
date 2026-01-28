@@ -149,6 +149,13 @@ mkdir -p ~/.config/fastfetch
 cp -r fastfetch/* ~/.config/fastfetch/
 ```
 
+### 🔹 Install Cava
+
+```
+mkdir -p ~/.config/fastfetch
+cp -r cava/* ~/.config/cava/
+```
+
 ### 🔹 Install Waybar
 
 ```
